@@ -12,12 +12,12 @@ const Skills = () => {
     {
       id: 1,
       image: html,
-      title: "HTML",
+      title: "HTML5",
     },
     {
       id: 2,
       image: css,
-      title: "CSS",
+      title: "CSS3",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Skills = () => {
     {
       id: 5,
       image: react,
-      title: "React",
+      title: "ReactJs",
     },
     {
       id: 6,
