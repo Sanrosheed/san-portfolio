@@ -24,7 +24,7 @@ const Hero = () => {
   window.addEventListener("scroll", function () {
     const downArrow = document.querySelector(".down-arrow");
 
-    if (this.scrollY >= 90) downArrow.classList.add("hide-down-arrow");
+    if (this.scrollY >= 500) downArrow.classList.add("hide-down-arrow");
     else downArrow.classList.remove("hide-down-arrow");
   });
 

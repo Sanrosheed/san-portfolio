@@ -1,27 +1,30 @@
 import React from "react";
 import Section from "./common/Section";
 import avatar from "../assets/avatar.png";
+import avatar3 from "../assets/avatar3.png";
+import avatar4 from "../assets/avatar4.png";
 
 const Testimonials = () => {
   const TESTIMONIALS = [
     {
       id: 1,
-      image: avatar,
+      image: avatar3,
       name: "Paul Oluwatosin",
       comment: "Sanusi is a hardworking, creative and determined person",
     },
     {
       id: 2,
-      image: avatar,
-      name: "Rufai Azeezat",
+      image: avatar4,
+      name: "Oguntan Praise",
       comment:
         "San is an unwaveringly dedicated individual, exemplifying a relentless commitment to excellence.",
     },
     {
       id: 3,
       image: avatar,
-      name: "Oguntan Praise",
-      comment: "Sanusi is a hardworking, creative and determined person",
+      name: "Rufai Azezat",
+      comment:
+        "You are a committed person, always eager to learn and grow. Keep up the excellent work",
     },
   ];
 
@@ -37,7 +40,7 @@ const Testimonials = () => {
               <img
                 src={image}
                 alt={name}
-                className="w-20 h-20 object-cover object-top pt-2"
+                className="w-24 h-24 object-cover object-top pt-2"
               />
             </div>
             <div className="w-2/3 flex flex-col justify-center items-center gap-3 p-2">
