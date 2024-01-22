@@ -10,7 +10,7 @@ const Testimonials = () => {
       id: 1,
       image: avatar3,
       name: "Paul Oluwatosin",
-      comment: "Sanusi is a hardworking, creative and determined person",
+      comment: "Sanusi is a hardworking, creative and a determined person.",
     },
     {
       id: 2,
