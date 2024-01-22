@@ -40,7 +40,7 @@ const Testimonials = () => {
               <img
                 src={image}
                 alt={name}
-                className="w-24 h-24 object-cover object-top pt-2"
+                className="w-28 h-28 object-cover object-top pt-2"
               />
             </div>
             <div className="w-2/3 flex flex-col justify-center items-center gap-3 p-2">
