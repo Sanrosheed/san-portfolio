@@ -14,7 +14,8 @@ const Testimonials = () => {
       id: 2,
       image: avatar,
       name: "Rufai Azeezat",
-      comment: "Sanusi is a hardworking, creative and determined person",
+      comment:
+        "San is an unwaveringly dedicated individual, exemplifying a relentless commitment to excellence.",
     },
     {
       id: 3,

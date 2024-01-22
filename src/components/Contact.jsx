@@ -52,7 +52,7 @@ const Contact = () => {
         </div>
 
         {/* bottom form */}
-        <div className="p-8 text-left w-full">
+        <div className="p-8 text-left w-full flex items-center justify-center">
           <form
             action="https://getform.io/f/53e3dd4e-7c3b-4865-8c0b-6937850f39e7"
             method="POST"

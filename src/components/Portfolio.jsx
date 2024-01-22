@@ -65,7 +65,7 @@ const Portfolio = () => {
         {projects.map(({ id, image, title, github, demo }) => (
           <div
             key={id}
-            className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
+            className="max-w-lg flex shadow-md shadow-gray-300 rounded-2xl overflow-hidden"
           >
             <img src={image} alt={title} className="w-2/3" />
             <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
