@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "./common/Section";
 import html from "../assets/html5-1.png";
-import html2 from "../assets/html5-2.png";
 import css from "../assets/css3.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
@@ -58,7 +57,7 @@ const Skills = () => {
               alt={title}
               className="w-8 h-8 md:w-20 md:h-20 object-contain"
             />
-            <h3 className="mt-2 text-sm lg:text-base">{title}</h3>
+            <h3 className="mt-4 text-sm lg:text-base">{title}</h3>
           </div>
         ))}
       </div>

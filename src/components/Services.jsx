@@ -34,7 +34,7 @@ const Services = () => {
       title="Services🛠"
       subtitle="Here are the services that i provide to my clients. I hope I offer the service that you are looking for. If you don't find something that you are looking for, then please send an email."
     >
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
         {services.map(({ id, image, title }) => (
           <div
             key={id}
