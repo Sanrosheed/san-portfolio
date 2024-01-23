@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./common/Section";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 
 import contact from "../assets/mobile.png";
 
@@ -19,8 +20,8 @@ const Contact = () => {
     },
     {
       id: 3,
-      link: "https://github.com/Sanrosheed",
-      icon: <FaGithub />,
+      link: "https://www.instagram.com/sanrosheed/",
+      icon: <FaInstagram />,
     },
   ];
 

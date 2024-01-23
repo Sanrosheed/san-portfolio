@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
 import avatar from "../assets/avatar2.png";
 
 const Hero = () => {
@@ -19,6 +20,11 @@ const Hero = () => {
       id: 3,
       link: "https://github.com/Sanrosheed",
       icon: <FaGithub />,
+    },
+    {
+      id: 3,
+      link: "https://github.com/Sanrosheed",
+      icon: <FaMedium />,
     },
   ];
 
