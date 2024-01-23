@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./common/Section";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 import contact from "../assets/mobile.png";
 
@@ -9,7 +10,7 @@ const Contact = () => {
     {
       id: 1,
       link: "https://twitter.com/SanRush_Heed",
-      icon: <FaTwitter />,
+      icon: <FaSquareXTwitter />,
     },
     {
       id: 2,
