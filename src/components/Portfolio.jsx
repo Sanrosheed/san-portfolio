@@ -29,16 +29,16 @@ const Portfolio = () => {
     {
       id: 3,
       image: p3,
-      title: "Scholarship Website",
-      github: "https://github.com/Sanrosheed/scholarship_website",
-      demo: "https://scholarship-website-plum.vercel.app/",
+      title: "CookieYum",
+      github: "https://github.com/Sanrosheed/CookieYum",
+      demo: "https://cookie-yum.vercel.app/",
     },
     {
       id: 4,
       image: p4,
-      title: "EdgeLedger Website",
-      github: "https://github.com/Sanrosheed/EdgeLedger",
-      demo: "https://edge-ledger-two.vercel.app/",
+      title: "Scholarship Website",
+      github: "https://github.com/Sanrosheed/scholarship_website",
+      demo: "https://scholarship-website-plum.vercel.app/",
     },
     {
       id: 5,
@@ -50,9 +50,9 @@ const Portfolio = () => {
     {
       id: 6,
       image: p6,
-      title: "Hotel Website",
-      github: "https://github.com/Sanrosheed/hotel_website",
-      demo: "https://hotel-website-san.vercel.app/",
+      title: "EdgeLedger Website",
+      github: "https://github.com/Sanrosheed/EdgeLedger",
+      demo: "https://edge-ledger-two.vercel.app/",
     },
   ];
 

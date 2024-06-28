@@ -6,6 +6,8 @@ import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import nextjs from "../assets/nextjs1.png";
+import figma from "../assets/figma.png";
 
 const Skills = () => {
   const skills = [
@@ -38,6 +40,16 @@ const Skills = () => {
       id: 6,
       image: github,
       title: "GitHub",
+    },
+    {
+      id: 6,
+      image: nextjs,
+      title: "Next.js",
+    },
+    {
+      id: 6,
+      image: figma,
+      title: "Figma",
     },
   ];
 
