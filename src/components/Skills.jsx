@@ -6,7 +6,7 @@ import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-import nextjs from "../assets/nextjs1.png";
+import nextjs from "../assets/nextjs.png";
 import figma from "../assets/figma.png";
 
 const Skills = () => {
