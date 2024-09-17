@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaMedium } from "react-icons/fa6";
 import avatar from "../assets/avatar2.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const SOCIAL = [
@@ -40,7 +41,14 @@ const Hero = () => {
       <h2 className="text-5xl text-rose-600 uppercase font-bold">
         Sanusi Rasheed
       </h2>
-      <h3 className="py-3 text-2xl">Frontend Developer</h3>
+      <motion.h3
+        className="py-3 text-2xl"
+        intial={{ opacity: 0, x: "100vw" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5, type: "spring" }}
+      >
+        Frontend Developer
+      </motion.h3>
       <p className="max-w-xl font-light text-gray-500">
         Hello <span className="animate-pulse text-4xl">👋</span>, Welcome to my
         world. I am a Frontend Developer. I love building websites and creating
@@ -69,13 +77,14 @@ const Hero = () => {
           alt="avatar"
           className="w-60 h-60 md:w-72 md:h-72 object-cover object-top bg-gradient-to-b from-rose-500 rounded-xl pt-5"
         />
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
           href="/Sanusi Rasheed CV.pdf"
           download={true}
           className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600 to-teal-500 text-white py-2 rounded-lg"
         >
           Resume
-        </a>
+        </motion.a>
       </div>
 
       {/* arrow down animation */}

@@ -9,6 +9,7 @@ import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
 import p5 from "../assets/p5.png";
 import p6 from "../assets/p6.png";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const projects = [
@@ -56,41 +57,56 @@ const Portfolio = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: 75 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 50, duration: 10, delay: 0.4 },
+    },
+  };
+
   return (
-    <Section
-      title="Portfolio📑"
-      subtitle="These are all some of the projects that i have worked on. These were built for practice."
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
     >
-      <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
-        {projects.map(({ id, image, title, github, demo }) => (
-          <div
-            key={id}
-            className="max-w-lg flex shadow-md shadow-gray-300 rounded-2xl overflow-hidden"
-          >
-            <img src={image} alt={title} className="w-2/3" />
-            <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
-              <h2>{title}</h2>
-              <a
-                className="text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110"
-                href={github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>
-              <a
-                className="text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110"
-                href={demo}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaExternalLinkSquareAlt />
-              </a>
+      <Section
+        title="Portfolio📑"
+        subtitle="These are all some of the projects that i have worked on. These were built for practice."
+      >
+        <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
+          {projects.map(({ id, image, title, github, demo }) => (
+            <div
+              key={id}
+              className="max-w-lg flex shadow-md shadow-gray-300 rounded-2xl overflow-hidden"
+            >
+              <img src={image} alt={title} className="w-2/3" />
+              <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
+                <h2>{title}</h2>
+                <a
+                  className="text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110"
+                  href={github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  className="text-lg md:text-xl lg:text-2xl cursor-pointer duration-150 hover:scale-110"
+                  href={demo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaExternalLinkSquareAlt />
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </Section>
+          ))}
+        </div>
+      </Section>
+    </motion.div>
   );
 };
 
