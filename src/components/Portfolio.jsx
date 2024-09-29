@@ -37,9 +37,9 @@ const Portfolio = () => {
     {
       id: 4,
       image: p4,
-      title: "Scholarship Website",
-      github: "https://github.com/Sanrosheed/scholarship_website",
-      demo: "https://scholarship-website-plum.vercel.app/",
+      title: "Jewelry Empire",
+      github: "https://github.com/Sanrosheed/jewelry_empire",
+      demo: "https://jewelry-empire.vercel.app/",
     },
     {
       id: 5,
@@ -71,6 +71,7 @@ const Portfolio = () => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       <Section
         title="Portfolio📑"

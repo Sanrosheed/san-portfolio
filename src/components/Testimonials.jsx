@@ -43,6 +43,7 @@ const Testimonials = () => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
     >
       <Section
         title="Testimonials 💭"

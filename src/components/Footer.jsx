@@ -16,6 +16,7 @@ const Footer = () => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="min-h-fit flex flex-col justify-start items-center py-16 px-3"
     >
       <p className="max-w-xl font-light text-gray-500 mb-10">
