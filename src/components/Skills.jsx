@@ -7,7 +7,8 @@ import react from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import nextjs from "../assets/nextjs.png";
-import figma from "../assets/figma.png";
+import git from "../assets/git logo.png";
+import typescript from "../assets/TypeScript logo.png";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -36,21 +37,27 @@ const Skills = () => {
       id: 5,
       image: react,
       title: "ReactJs",
-    },
+    },  
     {
       id: 6,
       image: github,
       title: "GitHub",
     },
     {
-      id: 6,
+      id: 7,
+      image: git,
+      title: "Git",
+    },
+    {
+      id: 8,
       image: nextjs,
       title: "Next.js",
     },
+
     {
-      id: 6,
-      image: figma,
-      title: "Figma",
+      id: 9,
+      image: typescript,
+      title: "TypeScript",
     },
   ];
 
