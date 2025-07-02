@@ -73,15 +73,14 @@ const Portfolio = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-
       <Section
         title="Portfolio📑"
-        subtitle="These are some of the projects that i have worked on. Some were built for practice while the recorded ones are private projects."
+        subtitle="These are some of the projects that i have worked on."
       >
+        {/* Some were built for practice while the recorded ones are private projects. */}
         <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
-
           {/* Private Projects */}
-          <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+          {/* <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
       <iframe
         src="https://player.vimeo.com/video/1085075153?h=ec7212a991&badge=0&autopause=0&player_id=0&app_id=58479"
         title="Partner in Health Care (PIHC)"
@@ -89,18 +88,18 @@ const Portfolio = () => {
         allowFullScreen
         className="absolute top-0 left-0 w-full h-full border-0"
       ></iframe>
-    </div>
-        <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
-      <iframe
-        src="https://player.vimeo.com/video/1086802501?h=d635308555&badge=0&autopause=0&player_id=0&app_id=58479"
-        title="Real estate website"
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-        allowFullScreen
-        className="absolute top-0 left-0 w-full h-full border-0"
-      ></iframe>
-    </div>
+    </div> */}
+          {/* <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+            <iframe
+              src="https://player.vimeo.com/video/1086802501?h=d635308555&badge=0&autopause=0&player_id=0&app_id=58479"
+              title="Real estate website"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div> */}
 
-        {/* Public Projects */}
+          {/* Public Projects */}
           {projects.map(({ id, image, title, github, demo }) => (
             <div
               key={id}
