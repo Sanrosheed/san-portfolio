@@ -4,28 +4,28 @@ import Section from "./common/Section";
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 import p1 from "../assets/p1.png";
-import p2 from "../assets/p2.png";
+import p2 from "../assets/stackJuniorWeb1.png";
 import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
 import p5 from "../assets/p5.png";
-import p6 from "../assets/p6.png";
+import p6 from "../assets/SanminaretWeb.png";
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      image: p2,
+      title: "StackJunior",
+      github: "https://github.com/Sanrosheed/stack-junior",
+      demo: "https://stack-junior.vercel.app/",
+    },
+    {
+      id: 2,
       image: p1,
       title: "BitMedics",
       github: "https://github.com/Oyedunmade1/BitMedics-React",
       demo: "https://bitmedics-app.vercel.app/",
-    },
-    {
-      id: 2,
-      image: p2,
-      title: "NewsGrid Website",
-      github: "https://github.com/Sanrosheed/news_grid_website",
-      demo: "https://news-grid-website-rho.vercel.app/",
     },
     {
       id: 3,
@@ -43,17 +43,17 @@ const Portfolio = () => {
     },
     {
       id: 5,
+      image: p6,
+      title: "San Minaret Hospital",
+      github: "https://github.com/Sanrosheed/sanminarethospital",
+      demo: "https://sanminarethospital.vercel.app/",
+    },
+    {
+      id: 6,
       image: p5,
       title: "Old Portfolio",
       github: "https://github.com/Sanrosheed/my-portfolio-tailwind",
       demo: "https://my-portfolio-tailwind-red.vercel.app/",
-    },
-    {
-      id: 6,
-      image: p6,
-      title: "EdgeLedger Website",
-      github: "https://github.com/Sanrosheed/EdgeLedger",
-      demo: "https://edge-ledger-two.vercel.app/",
     },
   ];
 
