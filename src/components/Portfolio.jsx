@@ -74,7 +74,7 @@ const Portfolio = () => {
       viewport={{ once: true }}
     >
       <Section
-        title="Portfolio📑"
+        title="Personal Projects📑"
         subtitle="These are some of the projects that i have worked on."
       >
         {/* Some were built for practice while the recorded ones are private projects. */}

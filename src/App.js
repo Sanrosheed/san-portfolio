@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
+import Products from "./components/Products";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <Services />
         <Skills />
+        <Products />
         <Portfolio />
         <Certifications />
         <Testimonials />
