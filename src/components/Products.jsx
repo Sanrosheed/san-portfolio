@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Section from "./common/Section";
 import p1 from "../assets/Ace-web-dark.png";
 import p1b from "../assets/Ace-web-light.png";
@@ -14,6 +14,7 @@ import p6b from "../assets/Fhemfel-Laundry-Messages.png";
 import { motion } from "framer-motion";
 
 const Products = () => {
+  const [toggleImage, setToggleImage] = useState(false);
   const projects = [
     {
       id: 1,
@@ -23,6 +24,7 @@ const Products = () => {
       tags: ["Software", "Technology"],
       info: "A creative tech agency specializing in crafting digital experiences that seamlessly blend aesthetics, usability and storytelling.",
       demo: "https://aceinnovationshub.vercel.app/",
+      transition: true,
     },
     {
       id: 2,
@@ -80,6 +82,13 @@ const Products = () => {
     },
   };
 
+  useEffect(() => {
+    const first = projects[0];
+    if (!first.transition) return;
+    const interval = setInterval(() => setToggleImage((prev) => !prev), 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <motion.div
       variants={containerVariants}
@@ -93,21 +102,32 @@ const Products = () => {
       >
         <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
           {projects.map(
-            ({ id, image, title, info, demo, hoverImage, tags }) => (
+            ({
+              id,
+              image,
+              title,
+              info,
+              demo,
+              hoverImage,
+              tags,
+              transition,
+            }) => (
               <div
                 key={id}
                 className="max-w-lg flex flex-col shadow-md cursor-pointer shadow-gray-300 rounded-2xl overflow-hidden"
               >
                 <div className="relative group">
                   <img
-                    src={image}
+                    src={
+                      transition ? (toggleImage ? hoverImage : image) : image
+                    }
                     alt={title}
-                    className="lg:h-80 object-cover transition-opacity duration-300 group-hover:opacity-0"
+                    className="lg:h-80 w-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                   />
                   <img
                     src={hoverImage}
                     alt={title}
-                    className="lg:h-80 object-cover absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:z-10"
+                    className="lg:h-80 w-full object-cover absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:z-10"
                   />
                 </div>
                 <div className="flex justify-between items-center mt-5 mb-3 mx-3">
