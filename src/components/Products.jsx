@@ -70,6 +70,7 @@ const Products = () => {
       tags: ["Laundry", "Cleaning", "Garment care"],
       info: "A platform that provides premium laundry services, including cleaning and garment care",
       demo: "",
+      transition: true,
     },
   ];
 
@@ -83,9 +84,7 @@ const Products = () => {
   };
 
   useEffect(() => {
-    const first = projects[0];
-    if (!first.transition) return;
-    const interval = setInterval(() => setToggleImage((prev) => !prev), 2000);
+    const interval = setInterval(() => setToggleImage((prev) => !prev), 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -122,12 +121,12 @@ const Products = () => {
                       transition ? (toggleImage ? hoverImage : image) : image
                     }
                     alt={title}
-                    className="lg:h-80 w-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+                    className="lg:h-80 w-full object-cover transition-opacity duration-700 ease-in-out group-hover:opacity-0"
                   />
                   <img
                     src={hoverImage}
                     alt={title}
-                    className="lg:h-80 w-full object-cover absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:z-10"
+                    className="lg:h-80 w-full object-cover absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 group-hover:opacity-100 group-hover:z-10"
                   />
                 </div>
                 <div className="flex justify-between items-center mt-5 mb-3 mx-3">
