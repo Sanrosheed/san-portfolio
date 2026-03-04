@@ -4,7 +4,6 @@ import html from "../assets/html5-1.png";
 import css from "../assets/css3.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
-import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import nextjs from "../assets/nextjs.png";
 import git from "../assets/git logo.png";

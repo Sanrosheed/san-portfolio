@@ -20,10 +20,14 @@ function Slider({ images, title }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSlider(1);
+      setSlideIndex((prev) => {
+        if (prev === images.length - 1) return 0;
+        return prev + 1;
+      });
     }, 5000);
+
     return () => clearInterval(interval);
-  }, [slideIndex]);
+  }, [images.length]);
 
   const slideVariants = {
     initial: { opacity: 0, x: 0, scale: 1 },
