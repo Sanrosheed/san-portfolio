@@ -9,6 +9,10 @@ import tailwind from "../assets/tailwind.png";
 import nextjs from "../assets/nextjs.png";
 import git from "../assets/git logo.png";
 import typescript from "../assets/TypeScript logo.png";
+import node from "../assets/nodejs.png";
+import express from "../assets/expressjs.png";
+import mongodb from "../assets/mongodb.png";
+import firebase from "../assets/Firebase.png";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -37,27 +41,43 @@ const Skills = () => {
       id: 5,
       image: react,
       title: "ReactJs",
-    },  
+    },
+
     {
       id: 6,
-      image: github,
-      title: "GitHub",
-    },
-    {
-      id: 7,
       image: git,
       title: "Git",
     },
     {
-      id: 8,
+      id: 7,
       image: nextjs,
-      title: "Next.js",
+      title: "NextJS",
     },
 
     {
-      id: 9,
+      id: 8,
       image: typescript,
       title: "TypeScript",
+    },
+    {
+      id: 9,
+      image: firebase,
+      title: "Firebase",
+    },
+    {
+      id: 10,
+      image: node,
+      title: "NodeJS",
+    },
+    {
+      id: 11,
+      image: express,
+      title: "ExpressJS",
+    },
+    {
+      id: 12,
+      image: mongodb,
+      title: "MongoDB",
     },
   ];
 

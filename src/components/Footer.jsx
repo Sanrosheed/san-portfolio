@@ -11,6 +11,8 @@ const containerVariants = {
 };
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <motion.section
       variants={containerVariants}
@@ -20,7 +22,7 @@ const Footer = () => {
       className="min-h-fit flex flex-col justify-start items-center py-16 px-3"
     >
       <p className="max-w-xl font-light text-gray-500 mb-10">
-        © 2024 SANUSI RASHEED
+        © {currentYear} SANUSI RASHEED
       </p>
     </motion.section>
   );

@@ -47,12 +47,12 @@ const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, type: "spring" }}
       >
-        Frontend Developer
+        Fullstack Developer
       </motion.h3>
       <p className="max-w-xl font-light text-gray-500">
         Hello <span className="animate-pulse text-4xl">👋</span>, Welcome to my
-        world. I am a Frontend Developer. I love building websites and creating
-        solutions.
+        world. I am a Fullstack Developer. I love building web applications and
+        creating solutions.
       </p>
 
       {/* Social  icons*/}

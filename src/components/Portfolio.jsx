@@ -7,8 +7,8 @@ import p1 from "../assets/p1.png";
 import p2 from "../assets/stackJuniorWeb1.png";
 import p3 from "../assets/p3.png";
 import p4 from "../assets/p4.png";
-import p5 from "../assets/p5.png";
-import p6 from "../assets/SanminaretWeb.png";
+import p5 from "../assets/swiftHR.png";
+import p6 from "../assets/sanminaret.png";
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
@@ -19,6 +19,13 @@ const Portfolio = () => {
       title: "StackJunior",
       github: "https://github.com/Sanrosheed/stack-junior",
       demo: "https://stack-junior.vercel.app/",
+    },
+    {
+      id: 5,
+      image: p6,
+      title: "San Minaret Hospital",
+      github: "https://github.com/Sanrosheed/sanminarethospital",
+      demo: "https://sanminarethospital.vercel.app/",
     },
     {
       id: 2,
@@ -41,19 +48,13 @@ const Portfolio = () => {
       github: "https://github.com/Sanrosheed/jewelry_empire",
       demo: "https://jewelry-empire.vercel.app/",
     },
-    {
-      id: 5,
-      image: p6,
-      title: "San Minaret Hospital",
-      github: "https://github.com/Sanrosheed/sanminarethospital",
-      demo: "https://sanminarethospital.vercel.app/",
-    },
+
     {
       id: 6,
       image: p5,
-      title: "Old Portfolio",
-      github: "https://github.com/Sanrosheed/my-portfolio-tailwind",
-      demo: "https://my-portfolio-tailwind-red.vercel.app/",
+      title: "SwiftHR",
+      github: "https://github.com/Sanrosheed/swiftHR",
+      demo: "https://swift-hr.vercel.app/",
     },
   ];
 

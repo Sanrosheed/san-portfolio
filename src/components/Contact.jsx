@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Section from "./common/Section";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import contact from "../assets/mobile.png";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { useToast } from "./contexts/toastContext";
 
 const Contact = () => {
+  const formRef = useRef();
+  const { showSuccess, showError } = useToast();
+  const [isSending, setIsSending] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    emailjs
+      .sendForm(
+        "service_21qa4kf",
+        "template_fcxtdbw",
+        formRef.current,
+        "45XdCBbWdANckPyy-",
+      )
+      .then(
+        () => {
+          showSuccess("Message sent successfully!");
+          formRef.current.reset();
+          setIsSending(false);
+        },
+        (error) => {
+          showError("Failed to send message.");
+          console.log(error);
+          setIsSending(false);
+        },
+      );
+  };
+
   const SOCIAL = [
     {
       id: 1,
@@ -70,10 +101,7 @@ const Contact = () => {
 
           {/* bottom form */}
           <div className="p-8 text-left w-full flex items-center justify-center">
-            <form
-              action="https://getform.io/f/53e3dd4e-7c3b-4865-8c0b-6937850f39e7"
-              method="POST"
-            >
+            <form ref={formRef} onSubmit={sendEmail}>
               <div className="w-full">
                 <div className="flex flex-col">
                   <label className="capitalize text-sm py-2 font-extralight">
@@ -82,6 +110,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="name"
+                    required
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
                 </div>
@@ -93,6 +122,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
+                    required
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
                 </div>
@@ -104,6 +134,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="email"
+                    required
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
                 </div>
@@ -115,14 +146,19 @@ const Contact = () => {
                   <textarea
                     name="message"
                     rows="10"
+                    required
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none"
                   ></textarea>
                 </div>
               </div>
 
               <div className="flex items-center justify-center">
-                <button className="my-8 bg-gradient-to-r from-rose-600 to-teal-500 text-white px-6 py-3 uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">
-                  send message
+                <button
+                  type="submit"
+                  disabled={isSending}
+                  className="my-8 bg-gradient-to-r from-rose-600 to-teal-500 text-white px-6 py-3 uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200"
+                >
+                  {isSending ? "SENDING..." : "SEND MESSAGE"}
                 </button>
               </div>
             </form>
