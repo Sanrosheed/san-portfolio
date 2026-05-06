@@ -6,8 +6,8 @@ import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 import p1 from "../assets/p1.png";
 import p2 from "../assets/stackJuniorWeb1.png";
 import p3 from "../assets/p3.png";
-import p4 from "../assets/p4.png";
-import p5 from "../assets/swiftHR.png";
+import p4 from "../assets/Book-store.png";
+import p5 from "../assets/Tobams-Group-Website.png";
 import p6 from "../assets/sanminaret.png";
 import { motion } from "framer-motion";
 
@@ -44,17 +44,17 @@ const Portfolio = () => {
     {
       id: 4,
       image: p4,
-      title: "Jewelry Empire",
-      github: "https://github.com/Sanrosheed/jewelry_empire",
-      demo: "https://jewelry-empire.vercel.app/",
+      title: "Book Store",
+      github: "https://github.com/Sanrosheed/book-shop-app",
+      demo: "https://book-shop-beryl-three.vercel.app/",
     },
 
     {
       id: 6,
       image: p5,
-      title: "SwiftHR",
-      github: "https://github.com/Sanrosheed/swiftHR",
-      demo: "https://swift-hr.vercel.app/",
+      title: "Tobams Website",
+      github: "https://github.com/Sanrosheed/Tobams-website",
+      demo: "https://tobams-website.vercel.app/",
     },
   ];
 
